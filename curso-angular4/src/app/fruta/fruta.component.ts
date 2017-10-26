@@ -40,6 +40,19 @@ export class FrutaComponent{
     this.cambiarNombre();
     this.cambiarEdad(55);
     console.log('ngOnInit: ' +this.nombre + ' ->' + this.edad);
+
+    //variables y alcance
+    var uno = 8;
+    var dos = 15;
+
+    if(uno == 8){
+      let uno = 3;
+      var dos = 88;
+
+      console.log('Dentro del if.' + uno);
+    }
+
+    console.log('Fuera del if: '+ uno+ ' <> ' + dos);
   }
 
   cambiarNombre() {
