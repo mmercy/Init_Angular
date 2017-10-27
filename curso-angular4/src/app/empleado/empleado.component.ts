@@ -14,6 +14,8 @@ export class EmpleadoComponent {
   public empleado:Empleado;
   public trabajadores:Array<Empleado>;
   public trabajador_externo:boolean;
+  public color:string;
+
 
   constructor(){
     //se puede crear un objeto empleado.
@@ -24,6 +26,7 @@ export class EmpleadoComponent {
       new Empleado('Anny Gomz',61, 'Atencion a clientes',  true)
     ];
     this.trabajador_externo = true;
+    this.color = 'green';
   }
 
   ngOnInit() {

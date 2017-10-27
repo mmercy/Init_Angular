@@ -26,7 +26,8 @@
     <li *ngIf="trabajadores[0].contratado == false">No esta contratado</li>
   </ul>
 </div>
-
+<hr>
+<!-- DIRECTIVA para FOR-->
 <div>
 <h3>Listado de empleados</h3>
 <ul>
@@ -42,5 +43,20 @@
 
     </ul>
   </li>
+</ul>
+</div>
+<hr>
+<!-- DIRECTIVA para SWITCH -->
+<div>
+<h3>Color switch</h3>
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="'red'" [ngStyle]="{'background':color,
+'color':'white', 'padding':'20px'}">Es de color rojo.</li>
+
+  <li *ngSwitchCase="'green'" [ngStyle]="{'background':color,
+  'color':'white', 'padding':'20px'}">Es de color Verde.</li>
+
+  <li *ngSwitchCase="'blue'" [ngStyle]="{'background':color,
+  'color':'white', 'padding':'20px'}">Es de color Azul.</li>
 </ul>
 </div>
