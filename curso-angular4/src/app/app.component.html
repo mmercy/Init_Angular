@@ -5,10 +5,10 @@
 <!-- <fruta></fruta>
 <empleado-tag></empleado-tag>-->
 <nav>
-  <a [routerLink]="['/pagina-principal']">Home</a> -
-  <a [routerLink]="['/fruta']">Frutas</a> -
-  <a [routerLink]="['/empleado']">Empleado</a> -
-  <a [routerLink]="['/contacto']">Contacto</a>
+  <a [routerLink]="['/pagina-principal']" [routerLinkActive]="['activado']">Home</a> -
+  <a [routerLink]="['/fruta']" [routerLinkActive]="['activado']">Frutas</a> -
+  <a [routerLink]="['/empleado']" [routerLinkActive]="['activado']">Empleado</a> -
+  <a [routerLink]="['/contacto']" [routerLinkActive]="['activado']">Contacto</a>
 </nav>
 <hr>
 <router-outlet></router-outlet>
