@@ -1,24 +1,29 @@
 <h1 style="color: blue">{{title}}</h1>
 
-
 <div>
-<strong>Lista Empleados:</strong>
-<ul>
-  <li>{{trabajadores[0].nombre}}</li>
-  <li>{{trabajadores[0].edad}}</li>
-  <li>{{trabajadores[0].cargo}}</li>
-  <li>{{trabajadores[0].contratado}}</li>
-</ul>
+  <strong>Empleado estrella:</strong>
+  <button (click) = "cambiarExterno(false)">Mostrar trabajador</button>
 
+  <!-- directiva para condicion IF -->
+  <ul *ngIf="trabajador_externo==false">
+    <li>{{empleado.nombre}}</li>
+    <li>{{empleado.edad}}</li>
+    <li>{{empleado.cargo}}</li>
+    <li *ngIf="empleado.contratado == true">Esta contratado</li>
+    <li *ngIf="empleado.contratado == false">No esta contratado</li>
+  </ul>
 </div>
 
+<div>
+  <strong>Lista Empleados:</strong>
+  <button (click) = "cambiarExterno(true)">Mostrar empleados</button>
+  <ul *ngIf="trabajador_externo==true">
+    <li>{{trabajadores[0].nombre}}</li>
+    <li>{{trabajadores[0].edad}}</li>
+    <li>{{trabajadores[0].cargo}}</li>
+    <li>{{trabajadores[0].contratado}}</li>
+    <li *ngIf="trabajadores[0].contratado == true">Esta contratado</li>
+    <li *ngIf="trabajadores[0].contratado == false">No esta contratado</li>
+  </ul>
 
-<strong>Empleado estrella:</strong>
-<ul>
-  <li>{{empleado.nombre}}</li>
-  <li>{{empleado.edad}}</li>
-  <li>{{empleado.cargo}}</li>
-  <li>{{empleado.contratado}}</li>
-</ul>
-
-
+</div>
