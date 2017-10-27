@@ -5,3 +5,9 @@
 .fondoAzul{
   background: lightblue !important;
 }
+.fondoVerde{
+  background: lightgreen !important;
+}
+.letraGrande{
+  font-size:  30px;
+}
