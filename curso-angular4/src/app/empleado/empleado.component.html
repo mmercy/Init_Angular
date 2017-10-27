@@ -51,7 +51,7 @@
 
   <input type="text" [(ngModel)]="color_seleccionado" >
   <button (click)="logColorSeleccionado()" >Mostrar LOG</button>
-  <pre>
+  <pre [style.border]="color_seleccionado=='red'?'5px solid black': '1px solid pink'">
     <strong> Color elegido:</strong>
     {{color_seleccionado}}
   </pre>
