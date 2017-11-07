@@ -304,7 +304,14 @@ TYPESCRIPT
 	
 	*En un Array la forma de agregar el con push, y para eliminar es splice.
 	
-	
+	--------------------------------------------------------------------------------------
+							PIPES.
+	--------------------------------------------------------------------------------------
+	Los pipes, tuberias o filtros son pequeñas funciones que nos sirven para realizar
+	alguna tarea en nuestra vista o plantilla de angular.
+	Ejemplo:
+		* Convertir fecha, convertir un texto o un dato a algo o procesar algun
+			tipo de informacion en la vista.
 	
 	
 
