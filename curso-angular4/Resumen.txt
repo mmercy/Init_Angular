@@ -290,6 +290,19 @@ TYPESCRIPT
 		O sin parametro
 		this._router.navigate([path]);
 	
+	--------------------------------------------------------------------------------------
+							SERVICIOS
+	--------------------------------------------------------------------------------------
+	Se recomienda tener una carpeta para los servicios.
+	Para generar un service, se debe importar al Decorador 'Injectable'.
+		import {Injectable} from '@angular/core';
+	
+	Para definir la clase, ejemplo:
+		@Injectable()
+		export class RopaService{....}
+	
+	
+	
 	
 	
 
