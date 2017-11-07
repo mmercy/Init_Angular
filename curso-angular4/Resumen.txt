@@ -339,7 +339,13 @@ TYPESCRIPT
 		<input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" required>
 		Donde [(ngModel)]="coche.nombre"  es el campo del Modelo al que le seteara el valor
 		
-			
+	Las validaciones de un formulario las hace con html5.
+		Ejemplo de validacion y msg a mostrar en caso de que no cumpla.
+		<span *ngIf="color.touched && !color.valid" >
+			El color del coche es incorrecto!!.
+		</span>
+
+	
 			
 NOTA:
 En caso de que marque error al generar un nuevo proyecto de debe desinstalar node 
