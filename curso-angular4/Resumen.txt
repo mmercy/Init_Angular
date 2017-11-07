@@ -313,7 +313,7 @@ TYPESCRIPT
 		* Convertir fecha, convertir un texto o un dato a algo o procesar algun
 			tipo de informacion en la vista.
 			Ejemplo pipe de fecha: {{fecha|date:'dd/MM/yyyy'}}
-	
+			Ejemplo para caracteres: {{nombre | lowercase}}
 
 NOTA:
 En caso de que marque error al generar un nuevo proyecto de debe desinstalar node 
