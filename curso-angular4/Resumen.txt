@@ -314,7 +314,24 @@ TYPESCRIPT
 			tipo de informacion en la vista.
 			Ejemplo pipe de fecha: {{fecha|date:'dd/MM/yyyy'}}
 			Ejemplo para caracteres: {{nombre | lowercase}}
-
+	--------------------------------------------------------------------------------------
+	PIPES PERSONALIZADOS
+	* Crear una carpeta pipe
+	* Generar un archivo .pipe.ts
+		Dentro del archivo tener
+			import {Pipe, PipeTransform} from '@angular/core';
+			@Pipe({name: 'conversor'})
+			Donde 'conversor' es el nombre del pipe.
+	* Modificar el app.module.ts
+		Agregar el pipe en declarations, e importarlo en dicho archivo.
+		Ejemplo de usar pipe:
+		<p>Forma de usar una Pipe. {{5 | conversor : 7}}</p>
+		Donde 'conversor' es nombre del pipe.
+		Y recibe 2 parametros que son 5 y 7.
+	
+			
+			
+			
 NOTA:
 En caso de que marque error al generar un nuevo proyecto de debe desinstalar node 
 	y Angular e instalar todo nuevamente.

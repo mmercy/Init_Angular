@@ -13,6 +13,7 @@ import { EmpleadoComponent } from './empleado/empleado.component';
 import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
+import { ConversorPipe } from './pipes/conversor.pipe';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     FrutaComponent,
     EmpleadoComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
+    ConversorPipe
   ],
   imports: [
     BrowserModule,
