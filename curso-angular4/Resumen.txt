@@ -300,7 +300,9 @@ TYPESCRIPT
 	Para definir la clase, ejemplo:
 		@Injectable()
 		export class RopaService{....}
+	La capa de servicios es para contener la logica de negocio.
 	
+	*En un Array la forma de agregar el con push, y para eliminar es splice.
 	
 	
 	
