@@ -298,7 +298,4 @@ En caso de que marque error al generar un nuevo proyecto de debe desinstalar nod
 	y Angular e instalar todo nuevamente.
 
 
-https://www.udemy.com 
-correo: gryfoleon@gmail.com
-pass es: es302232576
  
