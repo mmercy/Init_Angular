@@ -11,3 +11,7 @@
 .letraGrande{
   font-size:  30px;
 }
+.activado{
+font-weight: bold;
+background: lightblue;
+}

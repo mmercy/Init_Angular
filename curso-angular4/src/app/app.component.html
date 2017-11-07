@@ -2,6 +2,13 @@
   {{title}}
 </h3>
 <hr>
-<!-- <fruta></fruta> -->
-
-<empleado-tag></empleado-tag>
+<!-- <fruta></fruta>
+<empleado-tag></empleado-tag>-->
+<nav>
+  <a [routerLink]="['/pagina-principal']" [routerLinkActive]="['activado']">Home</a> -
+  <a [routerLink]="['/fruta']" [routerLinkActive]="['activado']">Frutas</a> -
+  <a [routerLink]="['/empleado']" [routerLinkActive]="['activado']">Empleado</a> -
+  <a [routerLink]="['/contacto']" [routerLinkActive]="['activado']">Contacto</a>
+</nav>
+<hr>
+<router-outlet></router-outlet>
