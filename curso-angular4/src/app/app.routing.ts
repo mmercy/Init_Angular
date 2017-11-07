@@ -10,13 +10,21 @@ import { ContactoComponent } from './contacto/contacto.component';
 
 
 //Creacion de las rutas.
+/**
+ * Path de URL
+ * Ejemplo:
+ * {path: '', component: HomeComponent  }, //path vacio
+ * {path:'contacto/:page', component:ContactoComponent}, //nombre del parametro
+ * {path:'**', component: EmpleadoComponent} //path que no existe
+ */
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent  }, //path vacio
+  {path: '', component: HomeComponent  },
   {path:'empleado', component: EmpleadoComponent},
   {path:'fruta', component:FrutaComponent},
   {path:'pagina-principal', component:HomeComponent},
   {path:'contacto', component:ContactoComponent},
-  {path:'**', component: EmpleadoComponent} //path que no existe
+  {path:'contacto/:page', component:ContactoComponent},
+  {path:'**', component: EmpleadoComponent}
 ];
 
 

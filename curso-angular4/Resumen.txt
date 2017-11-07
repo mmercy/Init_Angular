@@ -266,12 +266,20 @@ TYPESCRIPT
 		  this.parametro = params['page'];
 		});
 		Donde params['page'] es el nombre que se le puso como parametro 
-	
+		Ese tipo de funcion declarada asi: function(params:Params)
+		es una funcion de calva.
 	
 	De la gasolineria una cuadra arriba. arles -- 75, agua incluida (buffet viernes)
+	NOTA: NO PONER COMENTARIOS AL FINAL DE LINEA EN EL app.routing.ts
+		Si se hace no tomara en cuenta el path.
+	//Creacion de las rutas.
+	const appRoutes: Routes = [
+	  {path: '', component: HomeComponent  }, //path vacio --------INCORRECTO
+	  {path:'empleado', component: EmpleadoComponent},
+	  {path:'contacto', component:ContactoComponent},
+	  {path:'contacto/:page', component:ContactoComponent}
+	];
 
-	
-	
 
 
 NOTA:
