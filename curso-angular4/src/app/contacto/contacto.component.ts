@@ -28,5 +28,10 @@ export class ContactoComponent{
     });
 
   }
-
+  redirigir(){
+    this._router.navigate(['/contacto', 'victorroblesweb.es']);
+  }
+  redirigirDos(){
+    this._router.navigate(['/pagina-principal']);
+  }
 }

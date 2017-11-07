@@ -281,6 +281,17 @@ TYPESCRIPT
 	];
 
 
+	REDIRECCIONES CON ROUTE
+	Para redirigir se utiliza el metodo navigate del objeto tipo Router.
+	Ejemplo: 
+		public parametro ¨= 'Parametro a enviar'; //Parametro a enviar por la URL
+		public path ¨= '/contacto'; //Path a donde se redireccionara. 
+		this._router.navigate([path, parametro]);
+		O sin parametro
+		this._router.navigate([path]);
+	
+	
+	
 
 NOTA:
 En caso de que marque error al generar un nuevo proyecto de debe desinstalar node 
