@@ -328,8 +328,17 @@ TYPESCRIPT
 		<p>Forma de usar una Pipe. {{5 | conversor : 7}}</p>
 		Donde 'conversor' es nombre del pipe.
 		Y recibe 2 parametros que son 5 y 7.
-	
-			
+	--------------------------------------------------------------------------------------
+							FORMULARIO.
+	--------------------------------------------------------------------------------------
+	Se crea un archivo html
+	<form #formCoche="ngForm" (ngSubmit) ="onSubmit()">
+		Donde #formCoche es el nombre del formulario.
+		"onSubmit()" es el metodo que tendra la logica que requiere el formulario.
+	Para asignarle un nombre a un input
+		<input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" required>
+		Donde [(ngModel)]="coche.nombre"  es el campo del Modelo al que le seteara el valor
+		
 			
 			
 NOTA:

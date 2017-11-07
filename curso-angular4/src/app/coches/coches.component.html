@@ -1,0 +1,19 @@
+<h1>
+  Componente de Autos
+</h1>
+
+<form #formCoche="ngForm" (ngSubmit) ="onSubmit()">
+  <p>
+    <label>Nombre: </label>
+    <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" required>
+</p>
+<p>
+    <label>Caballaje: </label>
+    <input type="text" name="caballaje" #caballaje="ngModel" [(ngModel)]="coche.caballaje" required >
+</p>
+<p>
+    <label>Color: </label>
+    <input type="text" name="color" #color="ngModel" [(ngModel)] = "coche.color" required>
+</p>
+<input type="submit" value="Guardar">
+</form>
