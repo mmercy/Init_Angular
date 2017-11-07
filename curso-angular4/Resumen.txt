@@ -312,7 +312,7 @@ TYPESCRIPT
 	Ejemplo:
 		* Convertir fecha, convertir un texto o un dato a algo o procesar algun
 			tipo de informacion en la vista.
-	
+			Ejemplo pipe de fecha: {{fecha|date:'dd/MM/yyyy'}}
 	
 
 NOTA:
