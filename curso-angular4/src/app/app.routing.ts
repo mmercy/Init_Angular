@@ -1,3 +1,4 @@
+import { CochesComponent } from './coches/coches.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
   {path:'pagina-principal', component:HomeComponent},
   {path:'contacto', component:ContactoComponent},
   {path:'contacto/:page', component:ContactoComponent},
+  {path:'coches', component: CochesComponent},
   {path:'**', component: EmpleadoComponent}
 ];
 
