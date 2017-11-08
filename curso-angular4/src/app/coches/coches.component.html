@@ -60,8 +60,16 @@ input[type="text"], span{
     <li *ngFor="let coche of coches">
       {{coche.nombre}} - {{coche.caballaje}} - {{coche.color}}
     </li>
-
   </ul>
-
 </div>
 
+<!-- El ID y TITLE se obtiene de la definicion en la URL utilizada. -->
+<div class="listado" >
+    <h3>Listado de Articulos</h3>
+    <ul *ngIf="articulos">
+      <li *ngFor="let articulo of articulos">
+        {{articulo.id}} - {{articulo.title}}
+      </li>
+    </ul>
+    <span *ngIf="!articulos" >Cargando listado...</span>
+  </div>

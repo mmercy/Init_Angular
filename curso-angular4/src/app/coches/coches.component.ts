@@ -13,6 +13,7 @@ import { Coche } from './coche';
 export class CochesComponent{
   public coche: Coche;
   public coches: Array<Coche>;
+  public articulos;
 
 
   constructor(private _peticionesService: PeticionesService){
@@ -25,6 +26,21 @@ export class CochesComponent{
 
   ngOnInit(){
     let result = this._peticionesService.getPrueba();
+    this._peticionesService.getArticulos().subscribe(
+      result =>{
+        this.articulos = result;
+        if(!this.articulos){
+          console.log("Error en el servidor");
+        }
+        console.log(result);
+      },
+      error=>{
+        var errorMessage = <any> error;
+        console.log(errorMessage);
+      }
+
+    );
+
     console.log("Recibio: " + result);
   }
 
