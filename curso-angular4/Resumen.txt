@@ -344,7 +344,50 @@ TYPESCRIPT
 		<span *ngIf="color.touched && !color.valid" >
 			El color del coche es incorrecto!!.
 		</span>
-
+	--------------------------------------------------------------------------------------
+							SERVICIOS, HTTP Y AJAX.
+	--------------------------------------------------------------------------------------
+	Generacion de servicios para hacer peticiones HTTP.
+		Importar el modulo Injectable.
+		Importar modulos de HTTP, Response y Headers.
+		Importar librerias (Para poder mapear las respuestas.):
+			import 'rxjs/add/operator/map';
+			import {Observable} from 'rxjs/Observable';
+	
+	Hacer peticiones HTTP y Ajax
+		* Utilizar una API generica de la red.
+		* Utilizaremos JSONPlaceholder. https://jsonplaceholder.typicode.com/
+		Para poder hacer peticiones Ajax se debe tener un objeto tipo HTTP en el servicio.
+		Para hacer una peticion GET, se debe usar el objeto HTTp y para mapear la respuesta es con el metodo map,
+			con una funcion => recoger los parametros.
+		 this._http.get(this.url).map(res => res.json());
+		 Donde res.json devuelve una coleccion de objetos usables.
+		Para poder capturar la respuesta del servicio, se debe utilizar el metodo suscribe, para suscribirse al Observable
+			y recoger el resultado o el error, segun sea el caso.
+				this._peticionesService.getArticulos().subscribe(
+				  result =>{
+					this.articulos = result;
+					if(!this.articulos){
+					  console.log("Error en el servidor");
+					}
+					console.log(result);
+				  },
+				  error=>{
+					var errorMessage = <any> error;
+					console.log(errorMessage);
+				  }
+				);
+		
+	
+	
+		
+		
+	
+			
+		
+	
+			
+		
 	
 			
 NOTA:
