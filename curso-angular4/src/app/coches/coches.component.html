@@ -23,7 +23,7 @@ input[type="text"], span{
 <div class="listado" >
 
 
-<form #formCoche="ngForm" (ngSubmit) ="onSubmit()" style="width: 200px">
+<form #formCoche="ngForm" (ngSubmit) ="onSubmit(); formCoche.reset()" style="width: 200px">
   <p>
     <label>Nombre: </label>
     <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" required>
