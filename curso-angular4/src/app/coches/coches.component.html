@@ -1,8 +1,29 @@
 <h1>
-  Componente de Autos
-</h1>
+    Componente de Autos
+  </h1>
+<style>
+  div{
+    float: left;
+  }
+form{
+  width: 200px;
+}
 
-<form #formCoche="ngForm" (ngSubmit) ="onSubmit()">
+input[type="text"], span{
+  display: block;
+  width: 100%;
+}
+
+.listado{
+  margin-left: 30px;
+}
+</style>
+
+
+<div class="listado" >
+
+
+<form #formCoche="ngForm" (ngSubmit) ="onSubmit()" style="width: 200px">
   <p>
     <label>Nombre: </label>
     <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" required>
@@ -21,10 +42,26 @@
   </p>
 <p>
     <label>Color: </label>
-    <input type="text" name="color" #color="ngModel" [(ngModel)] = "coche.color" required pattern="[a-zA-Z#]" >
+    <input type="text" name="color" #color="ngModel" [(ngModel)] = "coche.color" required pattern="[a-zA-Z#]+" >
     <span *ngIf="color.touched && !color.valid" >
         El color del coche es incorrecto!!.
     </span>
   </p>
-<input type="submit" value="Guardar">
+
+
+  <input type="submit" value="Guardar" [disabled]="!formCoche.form.valid" >
+
 </form>
+</div>
+
+<div class="listado" >
+  <h4>Listado de coches</h4>
+  <ul>
+    <li *ngFor="let coche of coches">
+      {{coche.nombre}} - {{coche.caballaje}} - {{coche.color}}
+    </li>
+
+  </ul>
+
+</div>
+
