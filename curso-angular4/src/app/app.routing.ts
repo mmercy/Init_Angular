@@ -1,3 +1,4 @@
+import { PlantillasComponent } from './plantillas/plantillas.component';
 import { CochesComponent } from './coches/coches.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   {path:'contacto', component:ContactoComponent},
   {path:'contacto/:page', component:ContactoComponent},
   {path:'coches', component: CochesComponent},
+  {path: 'plantillas', component: PlantillasComponent},
   {path:'**', component: EmpleadoComponent}
 ];
 
