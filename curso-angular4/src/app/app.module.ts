@@ -35,7 +35,7 @@ import { PlantillasComponent } from './plantillas/plantillas.component';
     HttpModule,
     routing
   ],
-  providers: [appRoutingProviders],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
