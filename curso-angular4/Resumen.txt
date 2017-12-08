@@ -379,11 +379,24 @@ TYPESCRIPT
 				);
 		
 	
-	
+	--------------------------------------------------------------------------------------
+							CREANDO UN API REST.
+	--------------------------------------------------------------------------------------
+	Antes de generar un api rest, primero se debe instalar un servidor de aplicaciones, en este caso se instalará
+	WampServer.
+	Introduccion al desarrollo del servicio REST.	
+	Api Rest es una aplicacion web a nivel del back-end que va interactuar con una base de datos y puede ser utilizada por 
+	cualquier tipo de aplicación o dispositivo que entienda el protocolo HTTP.
+	Desde angular se van a hacer peticiones AJAX a los metodos del api REST y asi poder interactuar con la base de datos.
 		
+	https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/ 
+
+
+
+
 		
-	
-			
+	--------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------
 		
 	
 			
