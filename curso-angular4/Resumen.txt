@@ -1,3 +1,54 @@
+-Curso: Curso de Angular 5 - Desde cero hasta profesional.
+-Instructor: Víctor Robles.
+-Este curso es compatible con Angular 2 final, Angular 4 y Angular 5.
+-
+-Angular es el framework para JavaScript estándar para crear webs SPA. Es uno de los frameworks más populares para 
+-desarrollar aplicaciones modernas y escalables en el lado del cliente. Si quieres ser desarrollador front-end o full-stack, 
+-o incluso si ya te dedicas al desarrollo web, es casi obligatorio aprender Angular.
+-
+-Angular 2, Angular 4 y Angular 5 han dado un salto de calidad con respecto a la versiones anteriores del framework, como AngularJS. 
+-Ahora utilizaremos TypeScript para definir nuestras clases, propiedades y métodos, el código es mucho más limpio y se ha mejorado 
+-el funcionamiento general del framework.
+-
+-Al finalizar el curso serás capaz de desarrollar tus propias aplicaciones web SPA (Single Page Apps) con Angular y modificar 
+-otras que ya estén programadas con este framework.
+-
+-Este curso está diseñado para que aprendas a desarrollar webapps en el cliente para el mundo real mediante ejemplos prácticos, 
+-paso a paso y de forma fácil para que no te quedes con dudas.
+-
+-Se tratan desde los aspectos más básicos y sencillos hasta los más avanzados, por tanto no es necesario que sepas nada de 
+-AngularJS, ni de Angular 2 para aprender a usarlo, aunque si que necesitarás saber JavaScript y HTML para aprovechar al 100% este curso.
+-
+-Abordaremos el desarrollo de las aplicaciones partiendo desde cero, desde la creación de los componentes necesarios, 
+-uso de rutas y servicios, creación y consumo de servicios REST (mediante un API REST) con el componente HTTP de 
+-Angular 4 y 5, hasta la creación y validación de formularios, entre otras cosas.
+-
+-¿Cuáles son los requisitos?
+-
+-    HTML y CSS básico
+-    JavaScript básico
+-    NO es necesario saber nada de AngularJS, Angular 1, Angular 2, Angular 4, Angular 5 y tampoco de TypeScript
+-
+-¿Qué voy a aprender en este curso?
+-
+-    Dominar Angular 4 y Angular 5
+-    Dominar TypeScript dentro Angular
+-    Desarrollar aplicaciones web SPA
+-    Mejorar la capacidad de adaptación a otros frameworks JavaScript
+-    Aumentar las posibilidades laborales como desarrollador
+-    Crear aplicaciones web modernas con Angular 5, Angular 4 y Angular 2
+-
+-¿A quién está dirigido?
+-
+-    Desarrolladores web
+-    Estudiantes de informática
+-    Estudiantes de ingenieria o ciclos formativos
+-    Personas interesadas en el desarrollo web
+-    Interesados en el desarrollo front-end
+-    Interesados en el mundo de AngularJS, Angular 2 y Angular 4
+-
+-
+---------------------------------------------------------------------------------------------------------------------
 Angular 4.
 1. Para Angular se requiere tener instalada una terminal de comandos.
 2. Instalar Node.JS
