@@ -429,12 +429,32 @@ TYPESCRIPT
 				  }
 				);
 		
-	
-	
+	--------------------------------------------------------------------------------------
+							DESARROLLAR APLICACION WEB COMPLETA
+	--------------------------------------------------------------------------------------
+	- Generacion e instalacion de aplicacion base Angular.
+	- Descargar Bootstrap
+	- Para incluir bootstrap en el proyecto es necesario copiar la carpeta de bootstrap en el directorio
+		curso-angular4-webapp\src\assets		Donde curso-angular4-webapp es el nombre del proyecto.
+		Ejemplo: curso-angular4-webapp\src\assets\bootstrap
+	- Dado que Bootstrap necesita de Jquery, descargar Jquery.
+		Descargar el archivo de JQuery en la ruta:
+		curso-angular4-webapp\src\assets
+		Ejemplo:curso-angular4-webapp\src\assets\jquery.min.js
 		
+		Se deben de agregar la siguientes lineas en el index.html de la aplicacion web.
+		<!-- JQuery -->
+		<script type="text/javascript"  src="assets/jquery.min.js" ></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.min.css"
+		<script type="text/javascript"  src="assets/bootstrap/js/bootstrap.min.js" ></script>
 		
+		* Esto es para incluir Bootstrap en la aplicación.
 	
-			
+
+
+	
 		
 	
 			
