@@ -454,7 +454,7 @@ TYPESCRIPT
 		* PicPink es una herramienta que permite identificar un color de alguna imagen en pantalla.
 	- Para aplicacion de estilos se debe generar el archivo .css en el directorio assets del proyecto.
 
-	
+	- Aplicacion de estilos para navegacion y el footer.
 		
 	
 			
