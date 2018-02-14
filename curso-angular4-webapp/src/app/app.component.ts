@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GLOBAL } from './components/services/global';
+import { GLOBAL } from './services/global';
 
 
 @Component({
