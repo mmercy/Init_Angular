@@ -58,7 +58,7 @@
 
 .activado{
   text-decoration: none !important;
-  /*background: #E03137 !important;*/
+  background: #E03137 !important;
   border-bottom: 4px solid yellow !important;
 }
 

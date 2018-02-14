@@ -457,7 +457,8 @@ TYPESCRIPT
 	- Aplicacion de estilos para navegacion y el footer.
 		
 	
-			
+	- Fichero de configuracion global
+	
 		
 	
 			

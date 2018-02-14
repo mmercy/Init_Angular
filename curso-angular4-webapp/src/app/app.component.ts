@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GLOBAL } from './components/services/global';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Productos Angular 4';
+
+  public header_color: string;
+
+  constructor() {
+    this.header_color = GLOBAL.header_color;
+  }
 }
