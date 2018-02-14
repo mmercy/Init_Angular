@@ -16,7 +16,10 @@ export class ProductoService {
   }
 
   getProductos () {
-    return "Texto desde el servicio";
+
+    return  this._http.get(this.url + 'productos')
+    .map(res => res.json());
+
   }
 
 }
