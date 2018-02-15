@@ -31,15 +31,15 @@ export class ProductosListComponent {
 
     this._productoService.getProductos().subscribe(
       result => {
-        console.log('Va pasando por aqui!');
+        console.log('Va pasando por aqui!'+result.status);
 
         if (result) {
-          if (result.code != 200) {
+          if (result.productos) {
             console.log('Todo correctamente');
             console.log(result);
-            this.productos = this.getMocks ();
+            this.productos = result.productos;
           } else {
-            this.productos = result.data;
+            this.productos = this.getMocks ();
           }
         } else{
           this.productos = this.getMocks ();
@@ -52,7 +52,6 @@ export class ProductosListComponent {
         console.log(<any>error);
       },
       () => {
-        this.productos = this.getMocks ();
         console.log('Algo paso!');
       }
     );
@@ -63,9 +62,9 @@ export class ProductosListComponent {
     console.log ('iniciando productos dummy');
 
     this.productosMock = [
-      new Producto(1, 'escritorio', 'escritorio mod1', 1253, 'imagen'),
-      new Producto(2, 'silla oficina', 'silla mod1', 200, 'imagen'),
-      new Producto(23, 'proyector', 'proyector xyz', 3500, 'imagen')
+      new Producto('1', 'escritorio', 'escritorio mod1', 1253, 'imagen'),
+      new Producto('2', 'silla oficina', 'silla mod1', 200, 'imagen'),
+      new Producto('23', 'proyector', 'proyector xyz', 3500, 'imagen')
     ];
 
     return this.productosMock;
