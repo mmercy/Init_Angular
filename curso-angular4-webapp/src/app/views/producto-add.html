@@ -4,19 +4,21 @@
 <hr/>
 
 <!-- Indicar que es un formulario de Angular -->
-<form #formProducto="ngForm" class="col-lg-6" id="form-producto" >
+<form #formProducto="ngForm" (ngSubmit)="onSubmit()" class="col-lg-6" id="form-producto" >
 
   <label>Nombre</label>
-  <input type="text" class="form-control" >
+  <!-- Va a modificar el objeto Producto en la propiedad nombre
+    con la siguiente instruccion:: [(ngModel)] = "producto.nombre"  -->
+  <input type="text" #nombre="ngModel" name="nombre" [(ngModel)] = "producto.nombre" class="form-control" >
 
   <label>Descripcion</label>
-  <textarea class="form-control" ></textarea>
+  <textarea #descripcion="ngModel" name="descripcion" [(ngModel)] = "producto.descripcion" class="form-control" ></textarea>
 
   <label>Precio</label>
-  <input type="text" class="form-control" >
+  <input type="text" #precio="ngModel" name="precio" [(ngModel)] = "producto.precio" class="form-control" >
 
   <label>Imagen</label>
-  <input type="file" class="form-control" >
+  <input type="file"  class="form-control" >
 
   <input type="submit" value="{{titulo}}" class="btn btn-success" >
 

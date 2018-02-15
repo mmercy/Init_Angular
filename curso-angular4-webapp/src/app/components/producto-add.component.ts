@@ -1,3 +1,4 @@
+import { Producto } from './../models/producto';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Component } from '@angular/core';
 import { ProductoService } from '../services/producto.service';
@@ -11,13 +12,20 @@ import { Producto } from '../models/producto';
 
 export class ProductoAddComponent {
   public titulo: string;
+  public producto: Producto;
 
   constructor () {
     this.titulo = 'Crear nuevo producto';
+    this.producto = new Producto(0, '', '', 0, '');
   }
 
   ngOnInit(){
     console.log('Cargaando producto-add');
   }
+
+  onSubmit(){
+    console.log(this.producto);
+  }
+
 
 }
