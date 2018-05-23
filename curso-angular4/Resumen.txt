@@ -458,7 +458,29 @@ TYPESCRIPT
 		
 	
 	- Fichero de configuracion global
-	
+	 Un servicio es una clase que contiene metodos relacionados a una entidad.
+	 Se haran peticiones ajax
+	 Para ello se debe tener un fichero de configuracion global.
+	 
+	 * En el component se inyecta el servicio en el constructor.
+	 Ejemplo de consumir un servicio:
+		this._productoService.addProducto(this.producto)
+		.subscribe(
+		  response => {
+			console.log('Codigo de respuesta: ' + response);
+			if (response) {
+			  //logica que se necesite
+			} else {
+			  console.log(response);
+			}
+		  },
+		  error => {
+			console.log(<any>error);
+		  }
+		);
+	 * Forma de validar un formulario desde el html
+		  <input type="submit" value="Guardar" [disabled]="!formProducto.form.valid"  class="btn btn-success" >
+			Donde formProducto es el nombre del formulario.
 		
 	
 			
@@ -467,4 +489,9 @@ En caso de que marque error al generar un nuevo proyecto de debe desinstalar nod
 	y Angular e instalar todo nuevamente.
 
 
+	Funcionalidad:
+	ActivateRoute
+	Router
+	
+	Metodo suscribe de los observables- cual es su funcionalidad??
  

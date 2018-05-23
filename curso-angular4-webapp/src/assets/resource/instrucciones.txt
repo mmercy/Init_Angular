@@ -1,0 +1,3 @@
+* Para el guardardo de productos se requiere tener instalado api-restful-productos.
+  Esta aplicacion requiere de tener instalado Mongo DB.
+  Para instalar la aplicacion es con npm start.
