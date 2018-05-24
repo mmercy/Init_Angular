@@ -62,9 +62,9 @@ export class ProductosListComponent {
     console.log ('iniciando productos dummy');
 
     this.productosMock = [
-      new Producto('1', 'escritorio', 'escritorio mod1', 1253, 'imagen'),
-      new Producto('2', 'silla oficina', 'silla mod1', 200, 'imagen'),
-      new Producto('23', 'proyector', 'proyector xyz', 3500, 'imagen')
+      new Producto('1', 'escritorio', 'escritorio mod1', '1253.00', 'imagen', '1', new Date() ),
+      new Producto('2', 'silla oficina', 'silla mod1', '200.00', 'imagen', '1', new Date()),
+      new Producto('23', 'proyector', 'proyector xyz', '3500.00', 'imagen', '1', new Date())
     ];
 
     return this.productosMock;

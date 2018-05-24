@@ -481,7 +481,22 @@ TYPESCRIPT
 	 * Forma de validar un formulario desde el html
 		  <input type="submit" value="Guardar" [disabled]="!formProducto.form.valid"  class="btn btn-success" >
 			Donde formProducto es el nombre del formulario.
-		
+	
+	* Forma de hacer una pertion AJAX desde un servicio
+	 var xhr = new XMLHttpRequest();
+	  xhr.onreadystatechange = function(){
+		  //Procesar respuesta.
+		  if (xhr.status == 200) {
+			resolve(JSON.parse(xhr.response));
+		  } else {
+			reject(xhr.response);
+		  }
+      };
+	 xhr.open('POST', url, true);
+     xhr.send(formData);
+
+
+	
 	
 			
 NOTA:

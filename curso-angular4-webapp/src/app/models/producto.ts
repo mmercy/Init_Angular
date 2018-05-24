@@ -3,8 +3,10 @@ export class Producto {
   constructor(    public id: string,
     public nombre: string,
     public descripcion: string,
-    public precio: number,
-    public imagen: string) {
+    public precio: string,
+    public imagen: string,
+  public cantidad: string,
+public createdOn: Date) {
   }
 
 }

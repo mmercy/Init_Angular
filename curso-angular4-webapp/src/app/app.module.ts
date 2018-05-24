@@ -1,3 +1,4 @@
+import { FilterProgramComponent } from './components/filter-program.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +21,8 @@ import { ProductoAddComponent } from './components/producto-add.component';
     HomeComponent,
     ErrorComponent,
     ProductosListComponent,
-    ProductoAddComponent
+    ProductoAddComponent,
+    FilterProgramComponent
   ],
   imports: [
     BrowserModule,

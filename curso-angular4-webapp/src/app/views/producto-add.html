@@ -29,7 +29,7 @@
    class="form-control" required patter="[0-9]+" >
 
   <label>Imagen</label>
-  <input type="file"  class="form-control" >
+  <input type="file"  class="form-control" (change)="fileChangeEvent($event)" >
 
   <!-- Deshabilitar el boton en caso de que el formulario sea invalido -->
   <input type="submit" value="{{titulo}}" [disabled]="!formProducto.form.valid"  class="btn btn-success" >
